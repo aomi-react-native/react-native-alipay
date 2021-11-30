@@ -1,21 +1,27 @@
 # react-native-alipay
 
-React Native AliPay
+React Native 集成 AliPaySDK
 
 ## Installation
 
 ```sh
-npm install react-native-alipay
+npm install @aomi/react-native-alipay
+or
+yarn add @aomi/react-native-alipay
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-alipay";
+import { AliPay } from '@aomi/react-native-alipay';
 
 // ...
-
-const result = await multiply(3, 7);
+// 发起支付
+const orderString = ''; // 服务端组装好的支付字符串
+const result = await AliPay.pay(orderString, {
+  appScheme: 'myapp',
+  showLoading: false
+})
 ```
 
 ## Contributing
