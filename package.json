@@ -1,6 +1,6 @@
 {
-  "name": "react-native-alipay",
-  "version": "0.1.0",
+  "name": "@aomi/react-native-alipay",
+  "version": "0.0.1",
   "description": "React Native AliPay",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
