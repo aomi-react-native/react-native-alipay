@@ -54,7 +54,8 @@ repositories {
 }
 
 dependencies {
-  implementation fileTree(dir: 'libs', includes: ['*.aar'])
+  // 因为aar引入问题，这里使用编译依赖,app自行下载SDK包导入
+  compileOnly fileTree(dir: 'libs', includes: ['*.aar'])
 
   //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
